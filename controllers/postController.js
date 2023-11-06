@@ -16,7 +16,7 @@ const createPostController = async (req, res) => {
       description,
       postedBy: req.auth._id,
     }).save();
-    console.log(req)
+  
     res.status(201).send({
       success: true,
       message: "Post Created Successfully",
