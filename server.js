@@ -26,12 +26,12 @@ app.use((err, req, res, next) => {
 });
 
 
-// app.get("/", (req, res) => {
-//   res.status(200).json({
-//     Success: true,
-//     message: "Server is working Fine",
-//   });
-// });
+app.get("/", (req, res) => {
+  res.status(200).json({
+    Success: true,
+    message: " Node Server is working Fine",
+  });
+});
 
 const Port = process.env.PORT || 7777;
 
